@@ -1,6 +1,7 @@
 import ArticleTitle from 'components/ArticleTitle'
 import Head from 'next/head'
 import Link from 'next/link'
+import Subscribe from 'components/Subscribe'
 import { getAllPostsForHome } from '../lib/api'
 import { formatDate } from '../lib/utils'
 
@@ -33,7 +34,7 @@ export default function Home(props: HomeProps) {
 
       <main className="grid gap-y-16 sm:gap-y-24">
         <div className="flex flex-col font-light gap-y-4">
-          <p className="text-lg sm:text-2xl leading-[140%]">
+          <p className="text-base sm:text-lg leading-[140%]">
             I'm the co-founder of Llama, a community that works with DAOs on protocol engineering, treasury allocation,
             and analytics. We are contributing to a new economy powered by open-source software, permissionless capital
             formation, and liquid labor.
@@ -42,7 +43,7 @@ export default function Home(props: HomeProps) {
             More about me.
           </Link>
         </div>
-        <div className="grid gap-y-12 sm:gap-y-16">
+        <div className="grid gap-y-10 sm:gap-y-12">
           {props.allPosts.edges.map(post => (
             <ArticleTitle
               key={post.node.slug}
@@ -53,6 +54,9 @@ export default function Home(props: HomeProps) {
           ))}
         </div>
       </main>
+      <div className="mt-10 sm:hidden">
+        <Subscribe />
+      </div>
     </div>
   )
 }
