@@ -61,6 +61,7 @@ export async function getAllPostsForHome(preview: boolean) {
 
   return data?.posts
 }
+// @ts-ignore
 export async function getPreviewPost(id, idType = 'DATABASE_ID') {
   const data = await fetchAPI(
     `
@@ -93,6 +94,7 @@ export async function getAllPostsWithSlug() {
   return data?.posts
 }
 
+//@ts-ignore
 export async function getPostAndMorePosts(slug, preview, previewData) {
   const postPreview = preview && previewData?.post
   // The slug may be the id of an unpublished post
@@ -194,6 +196,7 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
   }
 
   // Filter out the main post
+  // @ts-ignore
   data.posts.edges = data.posts.edges.filter(({ node }) => node.slug !== slug)
   // If there are still 3 posts, remove the last one
   if (data.posts.edges.length > 2) data.posts.edges.pop()
