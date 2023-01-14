@@ -25,6 +25,7 @@ export default function Post({ post, posts }) {
           <article className="prose max-w-3xl">
             <Head>
               <title>{post.title} | Shreyas Hariharan</title>
+              <meta property="og:title" content={`${post.title} | Shreyas Hariharan`} key="title" />
               <meta property="og:image" content={post.featuredImage?.node.sourceUrl} />
             </Head>
             <PostHeader
