@@ -66,7 +66,7 @@ export async function getAllPostsFromWordPress() {
   //@ts-ignore
   const data = await fetchAPI(`
     query AllPosts {
-      posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+      posts(first: 200, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
           node {
             title
