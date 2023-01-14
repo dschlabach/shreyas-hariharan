@@ -14,7 +14,8 @@ const Header = () => {
         <Link
           href="https://twitter.com/helloshreyas"
           className="flex justify-center items-center"
-          rel="noreferrer noopener"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Image src="/icons/twitter.svg" alt="Twitter Icon" width={22} height={18} />
         </Link>
