@@ -11,7 +11,11 @@ const Header = () => {
       </h1>
       <div className="hidden sm:flex gap-x-4">
         <Subscribe />
-        <Link href="https://twitter.com/helloshreyas" className="flex justify-center items-center">
+        <Link
+          href="https://twitter.com/helloshreyas"
+          className="flex justify-center items-center"
+          rel="noreferrer noopener"
+        >
           <Image src="/icons/twitter.svg" alt="Twitter Icon" width={22} height={18} />
         </Link>
       </div>
