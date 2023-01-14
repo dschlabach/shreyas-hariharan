@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
-import PostBody from '../../components/PostBody'
-import MoreStories from '../../components/MoreStories'
-import PostHeader from '../../components/PostHeader'
-import PostTitle from '../../components/PostTitle'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
+import PostBody from '../components/PostBody'
+import MoreStories from '../components/MoreStories'
+import PostHeader from '../components/PostHeader'
+import PostTitle from '../components/PostTitle'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../lib/api'
 import Subscribe from 'components/Subscribe'
 
 export default function Post({ post, posts }) {
@@ -64,7 +64,7 @@ export const getStaticPaths = async () => {
   const allPosts = await getAllPostsWithSlug()
 
   return {
-    paths: allPosts.edges.map(({ node }) => `/essays/${node.slug}`) || [],
+    paths: allPosts.edges.map(({ node }) => `/${node.slug}`) || [],
     fallback: true,
   }
 }

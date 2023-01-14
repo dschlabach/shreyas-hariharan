@@ -49,7 +49,7 @@ export default function Home(props: HomeProps) {
               key={post.node.slug}
               title={post.node.title}
               date={formatDate(post.node.date)}
-              slug={`/essays/${post.node.slug}`}
+              slug={`/${post.node.slug}`}
             />
           ))}
         </div>
