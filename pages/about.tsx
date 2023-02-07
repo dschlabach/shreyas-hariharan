@@ -20,7 +20,7 @@ const About = (props: AboutProps) => {
       <Head>
         <title>About | Shreyas Hariharan</title>
       </Head>
-      <div className="prose">
+      <div className="prose prose-headings:opacity-80 prose-a:text-white">
         <PostTitle>About</PostTitle>
         <PostBody content={props.data.pageBy.content} />
       </div>

@@ -20,7 +20,7 @@ export default function Post({ post }) {
         <PostTitle>Loading…</PostTitle>
       ) : (
         <>
-          <article className="prose max-w-3xl">
+          <article className="prose max-w-3xl md:max-w-5xl">
             <Head>
               <title>{post.title} | Shreyas Hariharan</title>
               <meta property="og:title" content={`${post.title} | Shreyas Hariharan`} key="title" />

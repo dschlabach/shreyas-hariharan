@@ -16,6 +16,7 @@ module.exports = {
         },
       },
       fontFamily: {
+        serif: ['Spectral', ...defaultTheme.fontFamily.serif],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       typography: theme => ({
@@ -25,6 +26,7 @@ module.exports = {
             '--tw-prose-headings': theme('colors.white'),
             p: {
               fontWeight: 300,
+              opacity: 0.7,
             },
             a: {
               fontWeight: 300,
@@ -36,6 +38,9 @@ module.exports = {
             em: {
               color: theme('colors.white'),
               opacity: 0.9,
+            },
+            li: {
+              opacity: 0.8,
             },
             blockquote: {
               color: theme('colors.white'),
