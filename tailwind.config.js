@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#13001E',
-        secondary: '#281732',
+        primary: '#210c2e',
+        secondary: '#43344d',
         light: '#FFFFFF',
         ui: {
           'taupe-gray': '#8B828F',
@@ -25,11 +25,11 @@ module.exports = {
             color: theme('colors.white'),
             '--tw-prose-headings': theme('colors.white'),
             p: {
-              fontWeight: 300,
+              fontWeight: 400,
               opacity: 0.7,
             },
             a: {
-              fontWeight: 300,
+              fontWeight: 400,
               color: theme('colors.white'),
             },
             strong: {
@@ -37,14 +37,14 @@ module.exports = {
             },
             em: {
               color: theme('colors.white'),
-              opacity: 0.9,
+              opacity: 0.7,
             },
             li: {
-              opacity: 0.8,
+              opacity: 0.7,
             },
             blockquote: {
               color: theme('colors.white'),
-              opacity: 0.9,
+              opacity: 0.7,
             },
           },
         },

@@ -10,6 +10,12 @@
     src: url('/fonts/Spectral-Regular.ttf');
   }
   @font-face {
+    font-family: 'Spectral';
+    font-display: fallback;
+    font-weight: 300;
+    src: url('/fonts/Spectral-Light.ttf');
+  }
+  @font-face {
     font-family: 'Inter';
     font-display: fallback;
     font-weight: 300;
