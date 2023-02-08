@@ -37,14 +37,12 @@ module.exports = {
             },
             em: {
               color: theme('colors.white'),
-              opacity: 0.7,
             },
             li: {
               opacity: 0.7,
             },
             blockquote: {
               color: theme('colors.white'),
-              opacity: 0.7,
             },
           },
         },
