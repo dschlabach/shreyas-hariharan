@@ -11,7 +11,7 @@ const Header = () => {
           Shreyas Hariharan
         </Link>
       </h1>
-      <div className="hidden sm:flex gap-x-4">
+      <div className="hidden sm:flex gap-x-4 ">
         <Subscribe />
         <Link
           href="https://twitter.com/helloshreyas"

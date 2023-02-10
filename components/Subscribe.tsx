@@ -27,14 +27,17 @@ const Subscribe = () => {
   }
   return (
     <form
-      className="flex"
+      className="relative sm:flex sm:min-w-[400px]"
       onSubmit={e => {
         e.preventDefault()
         handleEmailSubscribe(email)
       }}
     >
       <Input value={email} setValue={setEmail} />
-      <Button className="-ml-1 flex justify-center items-center min-w-[126px]" htmlType="submit">
+      <Button
+        className="absolute sm:relative right-0 top-0 -ml-1 flex justify-center items-center sm:min-w-[126px]"
+        htmlType="submit"
+      >
         {loading ? <Loader /> : prompt}
       </Button>
     </form>
