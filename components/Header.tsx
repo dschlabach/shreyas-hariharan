@@ -12,8 +12,8 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
           Shreyas Hariharan
         </Link>
       </h1>
-      <div className="hidden sm:flex gap-x-4 ">
-        <Subscribe />
+      <div className="hidden sm:flex gap-x-4">
+        {/* <Subscribe /> */}
         <Link
           href="https://twitter.com/helloshreyas"
           className="flex justify-center items-center"
@@ -21,7 +21,7 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
           rel="noopener noreferrer"
         >
           <svg
-            className="dark:text-light text-primary fill-current"
+            className="dark:text-light text-primary fill-current h-6 w-6"
             width="22"
             height="18"
             viewBox="0 0 22 18"
@@ -36,17 +36,17 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
         </Link>
         <button onClick={() => setDarkMode((prev: boolean) => !prev)}>
           {darkMode ? (
-            <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+            <SunIcon className="h-6 w-6 text-current opacity-0 animate-fade" />
           ) : (
-            <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+            <MoonIcon className="h-6 w-6 text-current opacity-0 animate-fade" />
           )}
         </button>
       </div>
       <button className="sm:hidden" onClick={() => setDarkMode((prev: boolean) => !prev)}>
         {darkMode ? (
-          <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+          <SunIcon className="h-6 w-6 text-current opacity-0 animate-fade" />
         ) : (
-          <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+          <MoonIcon className="h-6 w-6 text-current opacity-0 animate-fade" />
         )}
       </button>
     </div>

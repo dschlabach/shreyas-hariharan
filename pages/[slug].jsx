@@ -38,7 +38,7 @@ export default function Post({ post }) {
             />
             <PostBody content={post.content} />
           </article>
-          <div className="my-8 sm:hidden">
+          <div className="my-8 max-w-xl mx-auto">
             <Subscribe />
           </div>
           <hr className="my-16 sm:mt-28 sm:mb-24 dark:border-light border-primary" />
