@@ -3,7 +3,7 @@ import React from 'react'
 const Loader = () => {
   return (
     <svg
-      className="h-5 w-5 text-primary motion-safe:animate-spin"
+      className="h-5 w-5 text-light dark:text-primary motion-safe:animate-spin"
       viewBox="0 0 1024 1024"
       focusable="false"
       data-icon="loading"

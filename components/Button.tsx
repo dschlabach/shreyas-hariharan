@@ -27,7 +27,7 @@ const Button: React.FunctionComponent<ButtonProps> = ({
       type={htmlType}
       href={href}
       {...(href ? { target: '_blank', rel: 'noopener norefferer' } : {})}
-      className={`h-12 bg-light hover:bg-[#A199A5] text-black text-sm px-7 py-4 inline-block transition-colors group font-bold rounded-sm ease-in-out ${
+      className={`h-12 bg-primary text-light hover:bg-secondary dark:bg-light dark:hover:bg-[#A199A5] dark:text-primary text-sm px-7 py-4 inline-block transition-colors group font-bold rounded-sm ease-in-out ${
         className ? className + ' ' : ''
       }`}
       onClick={() => onClick()}

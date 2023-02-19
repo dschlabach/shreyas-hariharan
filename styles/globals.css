@@ -43,10 +43,6 @@
     src: url('/fonts/Inter-Bold.ttf');
   }
 
-  body {
-    background-color: theme('colors.primary');
-  }
-
   html {
     font-family: 'Spectral', system-ui, sans-serif;
   }
@@ -61,6 +57,10 @@
   }
 
   a:hover {
+    opacity: 70%;
+  }
+
+  .dark a:hover {
     opacity: 60%;
   }
 }
