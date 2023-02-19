@@ -52,7 +52,7 @@ module.exports = {
               color: theme('colors.primary'),
             },
             li: {
-              opacity: 0.7,
+              opacity: 0.8,
             },
             blockquote: {
               color: theme('colors.primary'),
