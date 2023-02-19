@@ -20,7 +20,7 @@ export default function Post({ post }) {
         <PostTitle>Loading…</PostTitle>
       ) : (
         <>
-          <article className="prose max-w-2xl mx-auto">
+          <article className="prose dark:prose-dark max-w-2xl mx-auto">
             <Head>
               <title>{post.title} | Shreyas Hariharan</title>
               <meta property="og:title" content={`${post.title} | Shreyas Hariharan`} key="title" />
@@ -41,7 +41,7 @@ export default function Post({ post }) {
           <div className="my-8 sm:hidden">
             <Subscribe />
           </div>
-          <hr className="border-accent-2 my-16 sm:mt-28 sm:mb-24" />
+          <hr className="my-16 sm:mt-28 sm:mb-24 dark:border-light border-primary" />
         </>
       )}
     </div>

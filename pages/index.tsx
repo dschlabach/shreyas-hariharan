@@ -34,13 +34,13 @@ export default function Home(props: HomeProps) {
 
       <main className="grid gap-y-16 sm:gap-y-24">
         <div className="flex flex-col font-light gap-y-4">
-          <p className="text-base sm:text-lg leading-[140%] text-white/80">
+          <p className="text-base sm:text-lg leading-[140%] dark:text-white/80 text-primary/80">
             I'm a co-founder of Llama. We are contributing to a new economy powered by open-source software,
             permissionless capital formation, and liquid labor.
           </p>
           <Link
             href="/about"
-            className="font-sans flex-shrink self-start border-b border-white/60 w-auto text-xs sm:text-sm transition duration-100 ease-in-out text-white/60"
+            className="font-sans flex-shrink self-start border-b border-primary/80 dark:border-white/60 w-auto text-xs sm:text-sm transition duration-100 ease-in-out dark:text-white/60 text-primary/80"
           >
             More about me.
           </Link>
