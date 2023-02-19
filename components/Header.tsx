@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Subscribe from './Subscribe'
 
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 
@@ -13,7 +12,6 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
         </Link>
       </h1>
       <div className="hidden sm:flex gap-x-4">
-        {/* <Subscribe /> */}
         <Link
           href="https://twitter.com/helloshreyas"
           className="flex justify-center items-center"
