@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Subscribe from './Subscribe'
 
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+
 const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Function }) => {
   return (
     <div className="flex justify-between flex-wrap gap-y-6 sm:flex-nowrap mb-6 sm:mb-0">
@@ -32,9 +34,20 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
             />
           </svg>
         </Link>
+        <button onClick={() => setDarkMode((prev: boolean) => !prev)}>
+          {darkMode ? (
+            <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+          ) : (
+            <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+          )}
+        </button>
       </div>
-      <button onClick={() => setDarkMode((prev: boolean) => !prev)} className="">
-        {darkMode ? '🌞' : '🌙'}
+      <button className="sm:hidden" onClick={() => setDarkMode((prev: boolean) => !prev)}>
+        {darkMode ? (
+          <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+        ) : (
+          <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
+        )}
       </button>
     </div>
   )

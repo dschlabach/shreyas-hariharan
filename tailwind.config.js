@@ -20,6 +20,15 @@ module.exports = {
         serif: ['Spectral', ...defaultTheme.fontFamily.serif],
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      animation: {
+        fade: '0.5s ease 0.05s 1 normal forwards running fade',
+      },
+      keyframes: {
+        fade: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
       typography: theme => ({
         DEFAULT: {
           css: {
