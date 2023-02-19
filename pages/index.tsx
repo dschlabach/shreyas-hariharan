@@ -35,7 +35,7 @@ export default function Home(props: HomeProps) {
       <main className="grid gap-y-16 sm:gap-y-24">
         <div className="flex flex-col font-light gap-y-4">
           <p className="text-base sm:text-lg leading-[140%] dark:text-white/80 text-primary/80">
-            I'm a co-founder of Llama. We are contributing to a new economy powered by open-source software,
+            I'm a cofounder of Llama. We are contributing to a new economy powered by open-source software,
             permissionless capital formation, and liquid labor.
           </p>
           <Link
