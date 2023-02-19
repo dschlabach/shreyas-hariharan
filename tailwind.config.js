@@ -69,6 +69,9 @@ module.exports = {
               fontWeight: 400,
               opacity: 0.9,
             },
+            h1: {
+              opacity: 0.9,
+            },
             a: {
               fontWeight: 400,
               color: theme('colors.light'),
@@ -80,11 +83,12 @@ module.exports = {
               color: theme('colors.light'),
             },
             li: {
-              opacity: 0.7,
+              opacity: 0.8,
             },
             blockquote: {
               color: theme('colors.light'),
             },
+            '--tw-prose-bullets': theme('colors.light'),
           },
         },
       }),
