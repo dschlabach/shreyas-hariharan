@@ -34,7 +34,7 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
             />
           </svg>
         </Link>
-        <button onClick={() => setDarkMode()}>
+        <button onClick={() => setDarkMode()} type="button">
           {darkMode ? (
             <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
           ) : (
@@ -42,13 +42,6 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
           )}
         </button>
       </div>
-      <button className="sm:hidden" onClick={() => setDarkMode()}>
-        {darkMode ? (
-          <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
-        ) : (
-          <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
-        )}
-      </button>
     </div>
   )
 }
