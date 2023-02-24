@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#210c2e',
-        secondary: '#43344d',
+        primary: '#202931',
+        secondary: '#2C363F',
         light: '#e3dbd8',
         ui: {
           'taupe-gray': '#8B828F',
-          'dark-purple': '#32213B',
+          'dark-purple': '#151E27',
         },
       },
       fontFamily: {
