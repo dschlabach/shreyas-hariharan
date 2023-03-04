@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Subscribe from './Subscribe'
+import { useIsClient } from 'usehooks-ts'
 
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 
 const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Function }) => {
+  const client = useIsClient()
+
   return (
     <div className="flex justify-between flex-wrap gap-y-6 sm:flex-nowrap mb-6 sm:mb-0">
       <h1 className="text-3xl font-bold">
@@ -35,7 +38,7 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
           </svg>
         </Link>
         <button onClick={() => setDarkMode()} type="button">
-          {darkMode ? (
+          {client && darkMode ? (
             <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
           ) : (
             <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
@@ -43,7 +46,7 @@ const Header = ({ darkMode, setDarkMode }: { darkMode: boolean; setDarkMode: Fun
         </button>
       </div>
       <button className="sm:hidden" onClick={() => setDarkMode()} type="button">
-        {darkMode ? (
+        {client && darkMode ? (
           <SunIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
         ) : (
           <MoonIcon className="h-5 w-5 text-current opacity-0 animate-fade" />
