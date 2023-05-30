@@ -6,7 +6,7 @@ import PostHeader from '../components/PostHeader'
 import PostTitle from '../components/PostTitle'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../lib/api'
 import Subscribe from 'components/Subscribe'
-x
+
 export default function Post({ post }) {
   const router = useRouter()
 
