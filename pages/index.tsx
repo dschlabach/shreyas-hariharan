@@ -28,8 +28,8 @@ export default function Home(props: HomeProps) {
     <div>
       <Head>
         <title>Shreyas Hariharan</title>
-        <meta name="description" content="Shreyas Hariharan, test" key="title" />
-        <meta name="og:title" content="Shreyas Hariharan" key="title" />
+        <meta name="description" content="Shreyas Hariharan, test" key="description" />
+        <meta name="og:title" content="Shreyas Hariharan, testing2" key="title" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
