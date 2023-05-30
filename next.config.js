@@ -8,7 +8,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        // source: '/(/[a-zA-Z]+/[a-zA-Z]+/[a-zA-Z]/)/:slug',
         source: '/([A-Za-z0-9]+/[A-Za-z0-9]+/[A-Za-z0-9]+)/:slug',
         destination: '/:slug',
         permanent: true,
