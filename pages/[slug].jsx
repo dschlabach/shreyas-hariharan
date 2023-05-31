@@ -19,11 +19,11 @@ export default function Post({ post }) {
       <Head>
         <title>{post.title} | Shreyas Hariharan</title>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={`${post.title} | Shreyas Hariharan`} key="og_title" />
-        <meta property="og:image" content={post.featuredImage?.node.sourceUrl} key="og_image" />
+        <meta property="og:title" content={`${post.title} | Shreyas Hariharan`} key="title" />
+        <meta property="og:image" content={post.featuredImage?.node.sourceUrl} key="image" />
         <meta property="og:twitter" content={`${post.title} | Shreyas Hariharan`} />
-        <meta property="twitter:title" content={`${post.title} | Shreyas Hariharan`} key="title" />
-        <meta property="twitter:image" content={post.featuredImage?.node.sourceUrl} key="image" />
+        <meta property="twitter:title" content={`${post.title} | Shreyas Hariharan`} />
+        <meta property="twitter:image" content={post.featuredImage?.node.sourceUrl} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div>
