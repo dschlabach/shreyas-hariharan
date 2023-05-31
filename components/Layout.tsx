@@ -1,9 +1,13 @@
 import React from 'react'
 import Header from 'components/Header'
 import useDarkMode from 'lib/useDarkMode'
+import { useIsClient } from 'usehooks-ts'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { isDarkMode, toggle } = useDarkMode()
+  const client = useIsClient()
+
+  if (!client) return null
 
   return (
     <div className={`${isDarkMode ? 'dark' : ''}`}>
