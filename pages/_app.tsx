@@ -9,7 +9,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Shreyas Hariharan</title>
         <meta property="og:title" content="Shreyas Hariharan" />
-        <meta property="og:title" content="Shreyas Hariharan" />
         <meta property="twitter:title" content="Shreyas Hariharan" />
       </Head>
       <Layout>
