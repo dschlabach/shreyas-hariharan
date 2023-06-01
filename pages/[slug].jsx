@@ -18,6 +18,7 @@ export default function Post({ post }) {
     <>
       <Head>
         <title>{post?.title} | Shreyas Hariharan</title>
+        <meta name="author" content="Shreyas Hariharan" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${post?.title} | Shreyas Hariharan`} key="title" />
         <meta property="og:image" content={post?.featuredImage?.node.sourceUrl} key="image" />
