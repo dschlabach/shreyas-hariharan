@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const { isDarkMode, toggle } = useDarkMode()
   const client = useIsClient()
 
-  if (!client) return children
+  if (!client) return <>{children}</>
 
   return (
     <div className={`${isDarkMode ? 'dark' : ''}`}>
