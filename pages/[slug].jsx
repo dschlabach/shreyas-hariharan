@@ -17,13 +17,13 @@ export default function Post({ post }) {
   return (
     <>
       <Head>
-        <title>{post.title} | Shreyas Hariharan</title>
+        <title>{post?.title} | Shreyas Hariharan</title>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={`${post.title} | Shreyas Hariharan`} key="title" />
-        <meta property="og:image" content={post.featuredImage?.node.sourceUrl} key="image" />
-        <meta property="og:twitter" content={`${post.title} | Shreyas Hariharan`} />
-        <meta property="twitter:title" content={`${post.title} | Shreyas Hariharan`} />
-        <meta property="twitter:image" content={post.featuredImage?.node.sourceUrl} />
+        <meta property="og:title" content={`${post?.title} | Shreyas Hariharan`} key="title" />
+        <meta property="og:image" content={post?.featuredImage?.node.sourceUrl} key="image" />
+        <meta property="og:twitter" content={`${post?.title} | Shreyas Hariharan`} />
+        <meta property="twitter:title" content={`${post?.title} | Shreyas Hariharan`} />
+        <meta property="twitter:image" content={post?.featuredImage?.node?.sourceUrl} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div>
@@ -33,13 +33,13 @@ export default function Post({ post }) {
           <>
             <article className="prose dark:prose-dark max-w-2xl mx-auto">
               <PostHeader
-                title={post.title}
+                title={post?.title}
                 coverImage={post.featuredImage}
-                date={post.date}
-                author={post.author}
-                categories={post.categories}
+                date={post?.date}
+                author={post?.author}
+                categories={post?.categories}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post?.content} />
             </article>
             <div className="my-8 max-w-xl mx-auto">
               <Subscribe />
