@@ -57,6 +57,9 @@ module.exports = {
             blockquote: {
               color: theme('colors.primary'),
             },
+            hr: {
+              borderColor: theme('colors.primary'),
+            },
             '--tw-prose-bullets': theme('colors.primary'),
             '--tw-prose-quote-borders': theme('colors.secondary'),
           },
@@ -87,6 +90,9 @@ module.exports = {
             },
             blockquote: {
               color: theme('colors.light'),
+            },
+            hr: {
+              borderColor: theme('colors.light'),
             },
             '--tw-prose-bullets': theme('colors.light'),
           },
