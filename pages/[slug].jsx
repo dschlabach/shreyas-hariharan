@@ -22,11 +22,12 @@ export default function Post({ post }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${post?.title} | Shreyas Hariharan`} key="title" />
         <meta property="og:image" content={post?.featuredImage?.node.sourceUrl} key="image" />
+        <meta property="og:url" content="https://shreyashariharan.com" />
 
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content={post?.featuredImage?.node?.sourceUrl ? 'summary_large_image' : 'summary'} />
         <meta property="og:twitter" content={`${post?.title} | Shreyas Hariharan`} />
         <meta property="twitter:title" content={`${post?.title} | Shreyas Hariharan`} />
-        <meta property="twitter:image" content={post?.featuredImage?.node?.sourceUrl} />
+        <meta property="twitter:image" content={post?.featuredImage?.node?.sourceUrl ?? '/sh.png'} />
         <meta property="twitter:site" content="@HelloShreyas" />
         <meta property="twitter:creator" content="@HelloShreyas" />
       </Head>
