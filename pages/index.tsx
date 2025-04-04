@@ -36,7 +36,8 @@ export default function Home(props: HomeProps) {
       <main className="grid gap-y-16 sm:gap-y-24">
         <div className="flex flex-col font-light gap-y-4">
           <p className="text-base sm:text-lg leading-[140%] dark:text-white/80 text-primary/80">
-            I'm the cofounder of Llama, a governance system for onchain organizations.
+            I'm the Consumer Lead at Monad, a high performance blockchain. I was previously the cofounder of Llama, a
+            governance platform backed by Founders Fund, Electric Capital, and Elad Gil.
           </p>
           <Link
             href="/about"
